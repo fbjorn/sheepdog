@@ -1,0 +1,27 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "*"
+pytest-aiohttp = "*"
+flake8 = "*"
+flake8-import-order = "*"
+flake8-quotes = "*"
+flake8-string-format = "*"
+flake8-comprehensions = "*"
+flake8-mutable = "*"
+flake8-bugbear = "*"
+flake8-coding = "*"
+
+[packages]
+pyyaml = "*"
+sheepdog = {editable = true,path = "."}
+aiohttp = "*"
+schema = "*"
+aiohttp-jinja2 = "*"
+loguru = "*"
+
+[requires]
+python_version = "3.7"

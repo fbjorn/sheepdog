@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Websites monitoring</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+<h1>Websites monitoring</h1>
+{% if not websites %}
+    <h3>Currently no websites are being monitored.</h3>
+{% endif %}
+<ul>
+    {% for website in websites %}
+        <li>
+            <div><a href="{{ website.url }}">{{ website.url }}</a></div>
+            <div class="circle {{ website.status }}"></div>
+        </li>
+    {% endfor %}
+</ul>
+<style>
+    h1, h3, a {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    h1, h3 {
+        text-align: center;
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+
+    .circle {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        margin: 0 10px;
+    }
+
+    .ok {
+        background: mediumseagreen;
+    }
+
+    .slow {
+        background: yellow;
+    }
+
+    .error {
+        background: red;
+    }
+
+</style>
+</body>
+</html>
