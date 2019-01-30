@@ -16,7 +16,7 @@ flake8-bugbear = "*"
 flake8-coding = "*"
 
 [packages]
-pyyaml = "*"
+pyyaml = ">=4.2b1"
 sheepdog = {editable = true,path = "."}
 aiohttp = "*"
 schema = "*"
@@ -25,3 +25,6 @@ loguru = "*"
 
 [requires]
 python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
