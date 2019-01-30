@@ -1,7 +1,14 @@
-polling_interval: 5
+# Known websites polling interval (sec)
+polling_interval: 60
+# Path to "database"
 db_path: /tmp/db.yaml
+# Response time which is considered slow (ms)
 slow_threshold: 250
+# Host of the server
 host: 0.0.0.0
+# Port of the server
 port: 8080
+# Additional path to log file besides of stdout
 log_file: ''
+# Log level (INFO|DEBUG|WARNING|ERROR)
 log_level: INFO
