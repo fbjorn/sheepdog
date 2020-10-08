@@ -1,6 +1,8 @@
 # sheepdog
 Website monitoring service :sheep: :dog2:
 
+> If you ended up in this repo please pay attention that this was just a test task before an interview
+
 [![Build Status](https://travis-ci.org/fbjorn/sheepdog.svg?branch=master)](https://travis-ci.org/fbjorn/sheepdog)
 
 ## Installation
